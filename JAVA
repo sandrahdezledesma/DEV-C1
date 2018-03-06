@@ -1,0 +1,34 @@
+public class Mascota {
+    //ATRIBUTOS
+    String nombre;
+    String tipo; //si es un perro, gato
+    int fecha[3]; //de cumpleaños. dia, mes, año
+    char sexo;
+    //CONSTRUCTOR
+    public Mascota(String tipo, String nombre){ //necesita una condicion inicial dentro del parentesis
+        this.nombre="nombre desconocido"
+      this.tipo="indeterminado"
+    }
+    
+    //FUNCIONES o MÉTODOS
+    String devuelveNombre(){ //cuando lo invocamos nos devuelve nada, y con el string nos devuelve el nombre
+        return(nombre);
+    }
+    devuelveTipo(){
+        return(tipo);
+    }
+    char develveSexo(){
+        return(sexo);
+    }
+    void cambiarNombre(String nuevoNombre){
+        nombre=nuevoNombre;
+    }
+}
+
+public class principal(){
+    public static void main(String args[]){
+        Mascota miPerritoFaldero;
+        miPerritoFaldero=new Mascota();
+    }
+    
+}
